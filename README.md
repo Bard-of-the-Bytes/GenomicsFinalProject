@@ -18,7 +18,7 @@ Scripts:
 
 How to Run the Project from Terminal.
 - Ensure Bowtie 2, Python, and all relevant dependencies are installed.
-- cd ~/GenomicsFinalProject (enter the project directory).
+- cd ~/GenomicsFinalProject-main (enter the project directory).
 - bowtie2-build data/ref.fa index/ref_index (build the Bowtie 2 index from ref.fa, producing index/ref_index.*.bt2 files).
 - bowtie2 -x index/ref_index -U data/reads1.fq -a -S output/A_only.sam (align mate A, producing output/A_only.sam).
 - bowtie2 -x index/ref_index -1 data/reads1.fq -2 data/reads2.fq -a --no-mixed --no-discordant -I 0 -X 500 -S output/paired.sam (align both mates as paired ends, producing output/paired.sam).
